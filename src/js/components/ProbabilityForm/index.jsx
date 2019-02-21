@@ -83,12 +83,13 @@ class ProbabilityForm extends Component {
                     <div className="row">
                         <Label 
                             classList={`${ProbabilityFormConstants.BaseClass}__probability-1-label`}
-                            for={`${ProbabilityFormConstants.BaseClass}__probability-1-input`}
+                            for="probability-1-input"
                             text="Probability 1"
                             valid={validProbability(this.state.probability1)}
                         />
                         <Input
                             classList={`${ProbabilityFormConstants.BaseClass}__probability-1-input`}
+                            id="probability-1-input"
                             max={1}
                             min={0}
                             onChange={ e => this.setState( {probability1 : e.target.value} )}
@@ -101,12 +102,13 @@ class ProbabilityForm extends Component {
                     <div className="row">
                         <Label 
                             classList={`${ProbabilityFormConstants.BaseClass}__probability-2-label`}
-                            for={`${ProbabilityFormConstants.BaseClass}__probability-2-input`}
+                            for="probability-2-input"
                             text="Probability 2"
                             valid={validProbability(this.state.probability2)}
                         />
                         <Input
                             classList={`${ProbabilityFormConstants.BaseClass}__probability-2-input`}
+                            id="probability-2-input"
                             max={1}
                             min={0}
                             onChange={ e => this.setState( {probability2 : e.target.value} )}
