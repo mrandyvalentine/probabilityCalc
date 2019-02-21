@@ -1,0 +1,20 @@
+@import '../../../styles/base/base';
+
+.input {
+	padding: 5px 10px;
+	border-style: solid;
+	border-width: 0 0 2px 0;
+	border-color: black;
+	font-size: $font-size;
+	outline: none;
+	min-height:30px;
+
+	&--valid {
+		border-color: $brand-green;
+	}
+
+	&--invalid {
+		border-color: $brand-red;
+	}
+}
+

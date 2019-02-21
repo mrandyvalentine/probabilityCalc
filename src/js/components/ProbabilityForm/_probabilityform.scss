@@ -1,0 +1,28 @@
+@import '../../../styles/base/base';
+
+.probabilityform {
+	.row {
+		height: 60px;
+	}
+
+	label {
+		width:150px;
+		padding-right:20px;
+	}
+
+	input[type="number"] {
+		width: 50px;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	&__previous {
+		padding-top:40px;
+
+		th, td {
+			padding:5px 10px;
+		}
+	}
+}
