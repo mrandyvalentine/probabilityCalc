@@ -129,7 +129,6 @@ class ProbabilityForm extends Component {
                             classList={`${ProbabilityFormConstants.BaseClass}__submit-button`}
                             // disable the button if both the inputs aren't valid
                             disabled={!validProbability(this.state.probability1) || !validProbability(this.state.probability2)}
-                            onClick={this.handleClick}
                             type="submit"
                         />
                     </div>
