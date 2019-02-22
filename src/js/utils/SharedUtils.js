@@ -21,9 +21,6 @@ export function validProbability(value) {
 	// null returned to prevent initial invalid flag on text values
 	if (!value) return null;
 
-	// check if a number has been passed
-	if (Number(value) === value && value % 1 !== 0) return false;
-
 	// check number is in range
 	if ((value > 1) || (value < 0)) return false;
 
